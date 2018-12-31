@@ -1,3 +1,5 @@
+using System;
+
 namespace CSharpFun
 {
     public class House
@@ -8,6 +10,7 @@ namespace CSharpFun
     string _windows;
     string _doors;
     string _rooms;
+    string _paintdoor;
 
     public string Foundation {
         get {
@@ -53,11 +56,20 @@ namespace CSharpFun
             this._rooms = value;
         }
     }
-    public void OpenDoor() {
 
+    public string PaintDoor {
+        get {
+            return _paintdoor;
+        } 
+        set{
+            this._paintdoor = value;
+        }
+        }
+    public void OpenDoor() {
+        Console.WriteLine("The door is open");
     }
     public void CloseDoor() {
-
+        Console.WriteLine("The door is closed");
     }
 
     }
