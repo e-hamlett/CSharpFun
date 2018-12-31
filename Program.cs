@@ -1,5 +1,5 @@
 ﻿using System;
-using CSharpFun.Lessons;
+using Lessons;
 
 namespace CSharpFun
 {
@@ -7,12 +7,24 @@ namespace CSharpFun
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello C#!");
-            MyHouseResults();
-            
+            //Console.WriteLine("Hello C#!");
+            //MyHouseResults();
+            MyNumericExamples();
         }
-        
-        static void MyHouseResults() 
+
+        static void MyNumericExamples()
+        {
+            NumericTypes myTypes = new NumericTypes();
+            myTypes.GetSomeType();
+
+            int something = myTypes.ConvertFloatToInt(35.9F);
+            Console.WriteLine(something);
+
+            Console.WriteLine(myTypes.LongFromInt(5600));
+
+        }
+
+        static void MyHouseResults()
         {
             House myHouse = new House();
             myHouse.PaintDoor = "Red";

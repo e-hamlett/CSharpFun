@@ -1,6 +1,6 @@
 using System;
 
-namespace CSharpFun.Lessons
+namespace Lessons
 {
     public class NumericTypes
     {
@@ -42,9 +42,25 @@ namespace CSharpFun.Lessons
         // range -7.9228E+24 to 7.9228E+24
         decimal _myDecimalValue = 13.234M;
 
-        public void GetSomeType(){
-                Console.WriteLine(3.0.GetType());
-                Console.WriteLine(_myFloatValue.GetType());
+        // Type inference; the getType method returns the variable type
+        public void GetSomeType()
+        {
+        // double
+         Console.WriteLine(3.0.GetType());
+        // float
+         Console.WriteLine(_myFloatValue.GetType());
+        }
+        // Method to demonstrate an explicit cast from float to int.
+        public int ConvertFloatToInt(float value)
+        {
+            int total = (int)value;
+            return total;
+        }
+        // Method to demonstrate an Implicit Cast from int to long.
+        public long LongFromInt(int value)
+        {
+            long total = value;
+            return total;
         }
 
     }
