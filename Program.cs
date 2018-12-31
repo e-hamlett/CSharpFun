@@ -1,4 +1,5 @@
 ﻿using System;
+using CSharpFun.Lessons;
 
 namespace CSharpFun
 {
@@ -8,6 +9,7 @@ namespace CSharpFun
         {
             Console.WriteLine("Hello C#!");
             MyHouseResults();
+            
         }
         
         static void MyHouseResults() 
