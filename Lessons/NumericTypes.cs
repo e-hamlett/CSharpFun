@@ -81,5 +81,70 @@ namespace Lessons
 
         }
 
+        public void CheckOperators()
+        {
+            int test = 100, test2 = 100;
+
+            int testVal = checked(test * test2);
+
+            checked
+            {
+                int testAgain = test * 300;
+                Console.WriteLine(testAgain);
+            }
+            Console.WriteLine(testVal);
+
+        }
+
+        public void IncrementDecrement()
+        {
+            int myValue = 13, myOther = 10;
+            myValue++;
+            Console.WriteLine(myValue);
+            myOther--;
+            Console.WriteLine(myOther);
+            --myValue;
+            Console.WriteLine(myValue);
+            ++myOther;
+            Console.WriteLine(myOther);
+        }
+
+        public void SpecialValues()
+        {
+            Console.WriteLine(2.0 / 0.0);
+            Console.WriteLine(-2.0 / 0.0);
+            Console.WriteLine(2.0 / -0.0);
+            Console.WriteLine(-2.0 / -0.0);
+            Console.WriteLine(0.0 / 0.0);
+            Console.WriteLine((2.0 / -0.0) - (2.0 / 0.0));
+            Console.WriteLine(0.0 / -0.0 == double.NaN);
+            Console.WriteLine(double.IsNaN(0.0 / 0.0));
+            Console.WriteLine(object.Equals(0.0 / 0.0, double.NaN));
+        }
+
+        public void ComparisonOperators()
+        {
+            bool isCorrect = true;
+
+            int x = 3, y = 5, z = 3;
+
+            Console.WriteLine(x == y); //false
+            Console.WriteLine(x != y); //true 
+            Console.WriteLine(x == z); //true 
+
+        }
+
+        public void OtherOperators()
+        {
+            int val1 = 5, val2 = 10;
+        // val1 = val1 + val2
+            Console.WriteLine(val1 += val2);
+            //Console.WriteLine();
+            //Console.WriteLine();
+            //Console.WriteLine();
+            //Console.WriteLine();
+
+        }
+
     }
 }

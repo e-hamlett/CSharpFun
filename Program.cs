@@ -9,7 +9,8 @@ namespace CSharpFun
         {
             //Console.WriteLine("Hello C#!");
             //MyHouseResults();
-            MyNumericExamples();
+            //MyNumericExamples();
+            OtherNumericExamples();
         }
 
         static void MyNumericExamples()
@@ -22,6 +23,18 @@ namespace CSharpFun
 
             Console.WriteLine(myTypes.LongFromInt(5600));
             myTypes.BasicMath();
+            myTypes.CheckOperators();
+            myTypes.IncrementDecrement();
+            myTypes.SpecialValues();
+            myTypes.ComparisonOperators();
+    
+        }
+
+        static void OtherNumericExamples()
+        {
+            NumericTypes myTypes = new NumericTypes();
+
+            myTypes.OtherOperators();
 
         }
 
