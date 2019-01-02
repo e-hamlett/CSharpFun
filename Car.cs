@@ -15,7 +15,6 @@ namespace CSharpFun
         string _windows;
         string _wheels;
         string _paintcar;
-        string _interior;
         string _cardoor;
 
         public string Engine
@@ -149,17 +148,6 @@ namespace CSharpFun
             }
         }
 
-        public string Interior
-        {
-            get
-            {
-                return _interior;
-            }
-            set
-            {
-                this._interior = value;
-            }
-        }
 
         public string Cardoor 
         {
@@ -183,46 +171,7 @@ namespace CSharpFun
             Console.WriteLine("Car door closed.");
         }
 
-        public void OpenHood()
-        {
-            Console.WriteLine("Hood Open. Prop with bar located in hood bay area.");
-        }
-
-        public void CloseHood()
-        {
-            Console.WriteLine("Hood Closed.");
-        }
-
-        public void OpenTrunk()
-        {
-            Console.WriteLine("Trunk ajar.");
-        }
-
-        public void CloseTrunk()
-        {
-            Console.WriteLine("Trunk closed.");
-        }
-
-        public void OpenSunRoof()
-        {
-            Console.WriteLine("Sunroof open.");
-        }
-
-        public void TintWindows()
-        {
-            Console.WriteLine("Windows are at nine percent tint");
-        }
-
-        public void LockCarDoors()
-        {
-            Console.WriteLine("The doors are locked");
-        }
-
-        public void UnlockCarDoors()
-        {
-            Console.WriteLine("The doors are unlocked");
-        }
-
+       
 
     }
 }

@@ -21,6 +21,7 @@ namespace CSharpFun
             Console.WriteLine(something);
 
             Console.WriteLine(myTypes.LongFromInt(5600));
+            myTypes.BasicMath();
 
         }
 
@@ -42,3 +43,4 @@ namespace CSharpFun
 
     }
 }
+
