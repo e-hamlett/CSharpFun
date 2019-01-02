@@ -45,10 +45,10 @@ namespace Lessons
         // Type inference; the getType method returns the variable type
         public void GetSomeType()
         {
-        // double
-         Console.WriteLine(3.0.GetType());
-        // float
-         Console.WriteLine(_myFloatValue.GetType());
+            // double
+            Console.WriteLine(3.0.GetType());
+            // float
+            Console.WriteLine(_myFloatValue.GetType());
         }
         // Method to demonstrate an explicit cast from float to int.
         public int ConvertFloatToInt(float value)
@@ -63,5 +63,23 @@ namespace Lessons
             return total;
         }
 
+        public void BasicMath()
+        {
+            int myVal = 5, myOtherVal = 10;
+
+            int addVal = myVal + myOtherVal;
+            int subtractVal = myOtherVal - myVal;
+            int multiplyVal = myVal * myOtherVal;
+            int divisionVal = myVal / myOtherVal;
+            int modulusVal = myVal % myOtherVal;
+
+            Console.WriteLine(addVal);
+            Console.WriteLine(subtractVal);
+            Console.WriteLine(multiplyVal);
+            Console.WriteLine(divisionVal);
+            Console.WriteLine(modulusVal);
+
+        }
+
     }
-} 
+}

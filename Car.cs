@@ -15,6 +15,9 @@ namespace CSharpFun
         string _windows;
         string _wheels;
         string _paintcar;
+        string _interior;
+        string _cardoor;
+
         public string Engine
         {
             get
@@ -146,6 +149,30 @@ namespace CSharpFun
             }
         }
 
+        public string Interior
+        {
+            get
+            {
+                return _interior;
+            }
+            set
+            {
+                this._interior = value;
+            }
+        }
+
+        public string Cardoor 
+        {
+            get 
+            {
+                return _cardoor;
+            }
+            set
+            {
+                this._cardoor = value;
+            }
+        }
+
         public void OpenCarDoor()
         {
             Console.WriteLine("Car door ajar.");
@@ -186,11 +213,13 @@ namespace CSharpFun
             Console.WriteLine("Windows are at nine percent tint");
         }
 
-        public void LockCarDoors() {
+        public void LockCarDoors()
+        {
             Console.WriteLine("The doors are locked");
         }
 
-        public void UnlockCarDoors() {
+        public void UnlockCarDoors()
+        {
             Console.WriteLine("The doors are unlocked");
         }
 
