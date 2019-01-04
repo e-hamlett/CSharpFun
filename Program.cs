@@ -24,6 +24,12 @@ namespace CSharpFun
 
             Console.WriteLine(words);
             myTypes.CharTypeExamples();
+            myTypes.EscapeSeqExamples();
+            myTypes.PlaceHolderExample();
+            myTypes.ArrayExapmles();
+            myTypes.MyHouseArray();
+            myTypes.MultiArrayExample();
+            //myTypes.JaggedArrayExample();
 
         }
 
