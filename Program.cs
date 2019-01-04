@@ -10,7 +10,21 @@ namespace CSharpFun
             //Console.WriteLine("Hello C#!");
             //MyHouseResults();
             //MyNumericExamples();
-            OtherNumericExamples();
+            //OtherNumericExamples();
+            MyStringExamples();
+
+        }
+
+        static void MyStringExamples()
+        {
+            StringTypes myTypes = new StringTypes();
+            myTypes.SampleString();
+            myTypes.AddString();
+            string words = myTypes.StringBuilderExample("Geno is the man!", "C Sharp Class is fun.", "Stay in school kids.");
+
+            Console.WriteLine(words);
+            myTypes.CharTypeExamples();
+
         }
 
         static void MyNumericExamples()
@@ -27,7 +41,7 @@ namespace CSharpFun
             myTypes.IncrementDecrement();
             myTypes.SpecialValues();
             myTypes.ComparisonOperators();
-    
+
         }
 
         static void OtherNumericExamples()
