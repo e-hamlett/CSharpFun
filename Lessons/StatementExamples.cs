@@ -9,7 +9,7 @@ namespace Lessons
         {
             int num = 10;
             Console.WriteLine("Before If Statement");
-            if (num > 9);
+            if (num > 9) ;
             {
                 Console.WriteLine("If statement was vaild");
             }
@@ -122,12 +122,50 @@ namespace Lessons
 
         public void SampleDoWhile()
         {
-            int num = 0; 
+            int num = 0;
             do
             {
                 Console.WriteLine("Number = {0}", num);
                 num++;
             } while (num < 10);
+        }
+
+        public void SampleFor()
+        {
+            for (int i = 0; i < 10; i++)
+            {
+                Console.WriteLine("Number = {0}", i);
+            }
+        }
+
+        public void SampleForEach()
+        {
+            foreach (char ch in "Something")
+            {
+                Console.WriteLine(ch);
+            }
+        }
+
+        public string SampleJumpStatement(string day)
+        {
+            switch (day)
+            {
+                case "Sunday":
+                    goto default;
+                case "Monday":
+                    return "Pop Quiz Today!";
+                case "Tuesday":
+                    return "Test on Anatomy of Computers Tuesday";
+                case "Wednsday":
+                    return "Guess what day it is? Hump Dayyy!";
+                case "Thursday":
+                    goto default;
+                case "Friday":
+                    return "Enjoy your weekend mate!";
+
+                default:
+                    return "Test Over Nothing Today";
+            }
         }
 
     }

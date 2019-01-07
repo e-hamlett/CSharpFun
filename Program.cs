@@ -12,8 +12,15 @@ namespace CSharpFun
             //MyNumericExamples();
             //OtherNumericExamples();
             //MyStringExamples();
-            StatementSamples();
+            //StatementSamples();
+            BottlesSong();
+        }
 
+        static void BottlesSong()
+        {
+            BottlesOfBeer bob = new BottlesOfBeer();
+            string song = bob.BottlesOfBeerSong();
+            Console.WriteLine(song);
         }
 
 
@@ -29,6 +36,12 @@ namespace CSharpFun
             //se.SapmleSwitch(10);
             //se.SampleWhile();
             //se.SampleDoWhile();
+            //se.SampleFor();
+            //se.SampleForEach();
+            //string myString = se.SampleJumpStatement("Thursday");
+            //Console.WriteLine(myString);
+            //string myString1 = se.SampleJumpStatement("Friday");
+            //Console.WriteLine(myString1);
         }
 
         static void MyStringExamples()
