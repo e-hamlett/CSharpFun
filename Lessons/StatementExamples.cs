@@ -8,7 +8,8 @@ namespace Lessons
         public void SampleIf()
         {
             int num = 10;
-            if (num > 9) ;
+            Console.WriteLine("Before If Statement");
+            if (num > 9);
             {
                 Console.WriteLine("If statement was vaild");
             }
@@ -68,7 +69,7 @@ namespace Lessons
         {
             int num1 = 15, num2 = 20;
             Console.WriteLine("Before If Statement");
-            if (num2 > 25 || num1 = 15)
+            if (num2 > 25 || num1 == 15)
             {
                 Console.WriteLine("If Statement Executes");
             }

@@ -11,8 +11,24 @@ namespace CSharpFun
             //MyHouseResults();
             //MyNumericExamples();
             //OtherNumericExamples();
-            MyStringExamples();
+            //MyStringExamples();
+            StatementSamples();
 
+        }
+
+
+        static void StatementSamples()
+        {
+            StatementExamples se = new StatementExamples();
+            //se.SampleIf();
+            //se.SampleIfElse();
+            //se.SampleIfChain();
+            //se.SampleIfAnd();
+            //se.SampleIfOr();
+            //se.SampleConditional();
+            //se.SapmleSwitch(10);
+            //se.SampleWhile();
+            //se.SampleDoWhile();
         }
 
         static void MyStringExamples()
