@@ -6,11 +6,11 @@ namespace CSharpFun
     {
 
         string _foundation;
-        string _roof;
-        string _windows;
+        // string _roof;
+        string _window;
         string _doors;
         string _rooms;
-        string _paintdoor;
+        //string _paintdoor;
 
         public string Foundation
         {
@@ -24,27 +24,17 @@ namespace CSharpFun
             }
         }
 
-        public string Roof
-        {
-            get
-            {
-                return _roof;
-            }
-            set
-            {
-                this._roof = value;
-            }
-        }
+        public string Roof { get; set; }
 
-        public string Windows
+        public string Window
         {
             get
             {
-                return _windows;
+                return _window;
             }
             set
             {
-                this._windows = value;
+                this._window = value;
             }
         }
 
@@ -72,21 +62,42 @@ namespace CSharpFun
             }
         }
 
-        public string PaintDoor
+        public string PaintDoor { get; set; }
+
+        public House() { }
+
+        public House(string foundation, string window)
         {
-            get
-            {
-                return _paintdoor;
-            }
-            set
-            {
-                this._paintdoor = value;
-            }
+            this._foundation = foundation;
+            this._window = window;
+            Roof = "shingles";
+            PaintDoor = "Green";
         }
+        public House(string foundation, string window, string roof, string doorPaint)
+        {
+            this._foundation = foundation;
+            this._window = window;
+            this.Roof = roof;
+            this.PaintDoor = doorPaint;
+        }
+
+
         public void OpenDoor()
         {
             Console.WriteLine("The door is open");
         }
+        public void OpenDoor(bool isExterior)
+        {
+            if (isExterior)
+            {
+                Console.WriteLine("Open Front Door.");
+            }
+            else
+            {
+                Console.WriteLine("Open Bedroom Door.");
+            }
+        }
+
         public void CloseDoor()
         {
             Console.WriteLine("The door is closed");

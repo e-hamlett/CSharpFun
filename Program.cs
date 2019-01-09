@@ -13,8 +13,37 @@ namespace CSharpFun
             //OtherNumericExamples();
             //MyStringExamples();
             //StatementSamples();
-            BottlesSong();
+            //BottlesSong();
+            //HouseSample();
+            //StructSample();
+            CarSample();
+
         }
+
+        static void CarSample()
+        {
+            Car sampleCar = new Car("carbon", "steel");
+            Console.WriteLine(sampleCar.Hood);
+            Console.WriteLine(sampleCar.Seats);
+            Console.WriteLine(sampleCar.Trunk);
+
+        }
+
+        static void StructSample()
+        {
+            BookSample bookSample = new BookSample(4.98m, "Zombie Fallout", "Mark Tufo");
+            Console.WriteLine("The book " + bookSample.title + " by " + bookSample.author + " is $" + bookSample.price);
+        }
+
+        static void HouseSample()
+        {
+            House myHouse = new House("concrete", "triple pane");
+            Console.WriteLine(myHouse.PaintDoor);
+            Console.WriteLine(myHouse.Foundation + " " + myHouse.Window);
+            myHouse.OpenDoor(true);
+        }
+
+
 
         static void BottlesSong()
         {
@@ -38,10 +67,13 @@ namespace CSharpFun
             //se.SampleDoWhile();
             //se.SampleFor();
             //se.SampleForEach();
+            //string myString3 = se.SampleJumpStatement("Monday");
+            //Console.WriteLine(myString3);
             //string myString = se.SampleJumpStatement("Thursday");
             //Console.WriteLine(myString);
             //string myString1 = se.SampleJumpStatement("Friday");
             //Console.WriteLine(myString1);
+            se.SampleDays(DaysOfWeek.Wed);
         }
 
         static void MyStringExamples()

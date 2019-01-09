@@ -27,7 +27,7 @@ namespace Lessons
                 }
                 else
                 {
-                    result = "no more bottles of Beer on the wall!";
+                    result = " No more bottles of Beer on the wall!";
                 }
             }
             return result;

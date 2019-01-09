@@ -149,15 +149,59 @@ namespace CSharpFun
         }
 
 
-        public string Cardoor 
+        public string Cardoor
         {
-            get 
+            get
             {
                 return _cardoor;
             }
             set
             {
                 this._cardoor = value;
+            }
+        }
+
+        public Car() { }
+
+        public Car(string hood, string trunk)
+        {
+            this._hood = hood;
+            this._trunk = trunk;
+            Seats = "Leather";
+            Wheels = "24\" Chrome";
+        }
+
+        public Car(string horsepower, string body, string dashboard, string window, string doorPaint)
+        {
+            this._engine = horsepower;
+            this._body = body;
+            this._dashboard = dashboard;
+            this._windows = window;
+            Seats = "Fabric";
+            PaintCar = doorPaint;
+        }
+
+        public void RePaintCar(bool paintIsFaded)
+        {
+            if (paintIsFaded)
+            {
+                Console.WriteLine("Re-paint Car to desired color.");
+            }
+            else
+            {
+                Console.WriteLine("Car does not need to be repainted.");
+            }
+        }
+
+        public void OpenTrunk(bool isLocked)
+        {
+            if (isLocked)
+            {
+                Console.WriteLine("Press unlock trunk button on key, or pull Trunk Release button in Car.");
+            }
+            else
+            {
+                Console.WriteLine("Trunk is open.");
             }
         }
 
@@ -171,7 +215,7 @@ namespace CSharpFun
             Console.WriteLine("Car door closed.");
         }
 
-       
+
 
     }
 }
