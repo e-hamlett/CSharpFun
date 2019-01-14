@@ -67,12 +67,8 @@ namespace CSharpFun
         public House() { }
 
         public House(string foundation, string window)
-        {
-            this._foundation = foundation;
-            this._window = window;
-            Roof = "shingles";
-            PaintDoor = "Green";
-        }
+        : this(foundation, window, "shingles", "Green")
+        { }
         public House(string foundation, string window, string roof, string doorPaint)
         {
             this._foundation = foundation;

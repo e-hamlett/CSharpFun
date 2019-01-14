@@ -33,6 +33,9 @@ namespace CSharpFun
             Orange myOrange = new Orange();
             myOrange.EatFruit();
 
+            RanchStyle ranch = new RanchStyle("Stone", "Tripple Pane", "Composite", "Blue");
+            ranch.OpenDoor();
+            Console.WriteLine(ranch.Roof);
         }
 
         static void ReturnGrade()
