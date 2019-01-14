@@ -35,7 +35,8 @@ namespace CSharpFun
 
             RanchStyle ranch = new RanchStyle("Stone", "Tripple Pane", "Composite", "Blue");
             ranch.OpenDoor();
-            Console.WriteLine(ranch.Roof);
+            Console.WriteLine("The roof is made of" + " " + ranch.Roof + " material.");
+
         }
 
         static void ReturnGrade()
