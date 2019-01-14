@@ -25,21 +25,24 @@ namespace CSharpFun
         static void ReturnGrade()
         {
             QuizClass1 qc1 = new QuizClass1();
-            string grade1 = qc1.Grades();
+            string grade1 = qc1.Grades('E');
             Console.WriteLine(grade1);
-            //string grade2 = qc1.Grades('V');
-            //Console.WriteLine(grade2);
-            //string grade3 = qc1.Grades('G');
-            //Console.WriteLine(grade3);
-            //string grade4 = qc1.Grades('A');
-            //Console.WriteLine(grade4);
-            //string grade5 = qc1.Grades('F');
-            //Console.WriteLine(grade5);
+            string grade2 = qc1.Grades('V');
+            Console.WriteLine(grade2);
+            string grade3 = qc1.Grades('G');
+            Console.WriteLine(grade3);
+            string grade4 = qc1.Grades('A');
+            Console.WriteLine(grade4);
+            string grade5 = qc1.Grades('F');
+            Console.WriteLine(grade5);
             string grade6 = qc1.Grades('S');
             Console.WriteLine(grade6);
             qc1.DivisibleByThree();
+            string mygrade = qc1.Grades2('E');
+            Console.WriteLine(mygrade);
+            qc1.NewDivisibleByThree();
+            qc1.NewDivisibleByThree4();
             Console.ReadLine();
-
 
         }
 
