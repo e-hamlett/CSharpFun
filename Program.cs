@@ -18,7 +18,20 @@ namespace CSharpFun
             //HouseSample();
             //StructSample();
             //CarSample();
-            ReturnGrade();
+            // ReturnGrade();
+            FruitSample();
+        }
+
+        static void FruitSample()
+        {
+            Apple myApple = new Apple();
+            myApple.EatFruit();
+
+            Fruit myFruit = new Apple();
+            myFruit.EatFruit();
+
+            Orange myOrange = new Orange();
+            myOrange.EatFruit();
 
         }
 
