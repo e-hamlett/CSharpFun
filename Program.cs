@@ -19,7 +19,43 @@ namespace CSharpFun
             //StructSample();
             //CarSample();
             // ReturnGrade();
-            FruitSample();
+            //FruitSample();
+            //ParamsSample();
+            ModifierExamples();
+        }
+
+        static void ModifierExamples()
+        {
+            int test = 14;
+            Lesson011 myLesson = new Lesson011();
+            myLesson.RefSample(ref test);
+            Console.WriteLine(test);
+
+            String first, middle, second;
+
+            myLesson.OutSample("John Riley Doe", out first, out middle, out second);
+
+            Console.WriteLine(first);
+            Console.WriteLine(middle);
+            Console.WriteLine(second);
+        }
+
+        static void ParamsSample()
+        {
+            Lesson011 lesson = new Lesson011();
+            lesson.UseParams(10, 3, 24, 36, 45, 120);
+
+            lesson.UseParams();
+
+            int[] intArray = { 2, 3, 4, 5, 6 };
+
+            lesson.UseParams(intArray);
+
+            lesson.UseParams2(1, "Happy", false, 34.5F);
+
+            lesson.OptionalParam("Roger O\'dell");
+            lesson.OptionalParam("Eugene", 24);
+
         }
 
         static void FruitSample()
@@ -36,6 +72,10 @@ namespace CSharpFun
             RanchStyle ranch = new RanchStyle("Stone", "Tripple Pane", "Composite", "Blue");
             ranch.OpenDoor();
             Console.WriteLine("The roof is made of" + " " + ranch.Roof + " material.");
+            Console.WriteLine("The foundation is a mixture of Himilayan " + ranch.Foundation + ".");
+            Console.WriteLine("The windows are " + ranch.Window + ".");
+            Console.WriteLine("The door is painted in Tiffany " + ranch.PaintDoor + ".");
+            Console.WriteLine("Does this house spark your interest? If so, we could set up a walk-thru this upcoming Weekend!");
 
         }
 
