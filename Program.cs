@@ -21,7 +21,48 @@ namespace CSharpFun
             // ReturnGrade();
             //FruitSample();
             //ParamsSample();
-            ModifierExamples();
+            //ModifierExamples();
+            //Lesson12();
+            AbstractDemo();
+        }
+
+        static void AbstractDemo()
+        {
+            TRex trex = new TRex();
+            Triceratops tri = new Triceratops();
+            Archaeopteryx arc = new Archaeopteryx();
+            NarratorLizard nl = new NarratorLizard();
+
+            nl.Drink();
+            arc.Smile();
+            arc.SniffsAir();
+            arc.StandUp();
+            tri.TakeNap();
+            trex.SniffsAir();
+            nl.EatFood();
+            nl.Smile();
+            trex.StandUp();
+            trex.Move();
+            trex.Crouch();
+            arc.Move();
+            tri.Hide();
+            nl.Crouch();
+            arc.Crouch();
+            trex.Attack();
+            arc.Attack();
+
+
+
+
+
+        }
+
+        static void Lesson12()
+        {
+            double temp2 = Utilities.FahrenheitToCelsius("87");
+            Console.WriteLine(temp2);
+            double temp = Utilities.CelsiusToFahrenheit("30.55555555555556");
+            Console.WriteLine(temp);
         }
 
         static void ModifierExamples()
