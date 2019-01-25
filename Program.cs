@@ -18,41 +18,57 @@ namespace CSharpFun
             //HouseSample();
             //StructSample();
             //CarSample();
-            // ReturnGrade();
+            //ReturnGrade();
             //FruitSample();
             //ParamsSample();
             //ModifierExamples();
             //Lesson12();
-            AbstractDemo();
+            //AbstractDemo();
+            //Lesson13();
+            //FinalizerExample();
+            //IndexerSample();
+            PartialSample();
         }
 
+        static void PartialSample()
+        {
+            Pear pear = new Pear("Bartlett Pear");
+        }
+        static void IndexerSample()
+        {
+            IndexerExample indexExample = new IndexerExample();
+            indexExample[2] = 250;
+            for (int i = 0; i < indexExample.Length; i++)
+            {
+                Console.WriteLine("Value {0} = {1}", i, indexExample[i]);
+            }
+
+        }
+
+        static void FinalizerExample()
+        {
+
+            FinalizerExample fe = new FinalizerExample("Maliyah", "Ramiyah");
+
+
+        }
+
+        static void Lesson13()
+        {
+            String first = "Carl", second = "Hamlett";
+            Lesson13 lesson13 = new Lesson13(first, second);
+            Console.WriteLine("First Name = {0} and Last Name = {1}", first, second);
+            lesson13.Deconstruct(out first, out second);
+            Console.WriteLine("Last Name = {1} and First Name = {0}", first, second);
+
+
+        }
         static void AbstractDemo()
         {
             TRex trex = new TRex();
             Triceratops tri = new Triceratops();
             Archaeopteryx arc = new Archaeopteryx();
             NarratorLizard nl = new NarratorLizard();
-
-            nl.Drink();
-            arc.Smile();
-            arc.SniffsAir();
-            arc.StandUp();
-            tri.TakeNap();
-            trex.SniffsAir();
-            nl.EatFood();
-            nl.Smile();
-            trex.StandUp();
-            trex.Move();
-            trex.Crouch();
-            arc.Move();
-            tri.Hide();
-            nl.Crouch();
-            arc.Crouch();
-            trex.Attack();
-            arc.Attack();
-
-
-
 
 
         }

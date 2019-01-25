@@ -2,8 +2,9 @@ using System;
 
 namespace Lessons
 {
-    public abstract class Dinosaur
+    public abstract class Dinosaur : IPrehistoric
     {
+        public string Travel { get; set; } = "Walk";
         public abstract void EatFood();
         public abstract void Drink();
         public abstract void TakeNap();

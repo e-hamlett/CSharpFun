@@ -7,7 +7,7 @@ namespace CSharpFun
 
         string _foundation;
         // string _roof;
-        string _window;
+        string _window = "double pane";
         string _doors;
         string _rooms;
         //string _paintdoor;
@@ -24,7 +24,7 @@ namespace CSharpFun
             }
         }
 
-        public string Roof { get; set; }
+        public string Roof { get; set; } = "Composite";
 
         public string Window
         {
