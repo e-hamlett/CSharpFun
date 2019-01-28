@@ -27,7 +27,40 @@ namespace CSharpFun
             //Lesson13();
             //FinalizerExample();
             //IndexerSample();
-            PartialSample();
+            //PartialSample();
+            //AnotherHouseExample();
+            CollectionSample();
+        }
+
+        static void CollectionSample()
+        {
+            CollectionExamples myCE = new CollectionExamples();
+            myCE.MyArrayListExample();
+            myCE.MyListExample();
+        }
+
+        static void GenericSample()
+        {
+            GenericList<int> myList = new GenericList<int>();
+            myList.Add(10);
+
+            GenericList<string> mySecondList = new GenericList<string>();
+            mySecondList.Add("Happy");
+
+            GenericList<TRex> myTRexList = new GenericList<TRex>();
+            myTRexList.Add(new TRex());
+        }
+
+        static void AnotherHouseExample()
+        {
+            House myHouse = new House()
+            {
+                Roof = "Shingles",
+                Foundation = "Concrete",
+                Window = "Double Pane",
+                PaintDoor = "Dark Navy Blue",
+            };
+            Console.WriteLine("My window choice is gonna have to be " + myHouse.Window);
         }
 
         static void PartialSample()
@@ -175,13 +208,13 @@ namespace CSharpFun
             Console.WriteLine("The book " + bookSample.title + " by " + bookSample.author + " is $" + bookSample.price);
         }
 
-        static void HouseSample()
-        {
-            House myHouse = new House("concrete", "triple pane");
-            Console.WriteLine(myHouse.PaintDoor);
-            Console.WriteLine(myHouse.Foundation + " " + myHouse.Window);
-            myHouse.OpenDoor(true);
-        }
+        // static void HouseSample()
+        //{
+        //House myHouse = new House("concrete", "triple pane");
+        //Console.WriteLine(myHouse.PaintDoor);
+        // Console.WriteLine(myHouse.Foundation + " " + myHouse.Window);
+        // myHouse.OpenDoor(true);
+        // }
 
 
 
@@ -259,20 +292,20 @@ namespace CSharpFun
 
         }
 
-        static void MyHouseResults()
-        {
-            House myHouse = new House();
-            myHouse.PaintDoor = "Red";
-            myHouse.CloseDoor();
+        // static void MyHouseResults()
+        // {
+        // House myHouse = new House();
+        // myHouse.PaintDoor = "Red";
+        // myHouse.CloseDoor();
 
-            Console.WriteLine(myHouse.PaintDoor);
+        //Console.WriteLine(myHouse.PaintDoor);
 
-            House mySecondHouse = new House();
-            mySecondHouse.PaintDoor = "green";
-            Console.WriteLine(mySecondHouse.PaintDoor);
-            Console.WriteLine(mySecondHouse.PaintDoor);
+        // House mySecondHouse = new House();
+        //mySecondHouse.PaintDoor = "green";
+        //Console.WriteLine(mySecondHouse.PaintDoor);
+        // Console.WriteLine(mySecondHouse.PaintDoor);
 
-        }
+        //}
 
 
     }
