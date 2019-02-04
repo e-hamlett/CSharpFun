@@ -4,6 +4,7 @@ namespace Quiz
 {
     public class HDTV : Television
     {
+        public int ports = 7;
         public HDTV(string price, string size) : base(price, size)
         {
             Console.WriteLine("The price of the HDTV is " + price);

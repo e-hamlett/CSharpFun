@@ -38,6 +38,7 @@ namespace CSharpFun
             LabResults lr = new LabResults();
             lr.Question1();
             lr.Question2();
+            lr.Question3();
         }
 
         static void CollectionSample()
@@ -180,6 +181,8 @@ namespace CSharpFun
         static void ReturnGrade()
         {
             QuizClass1 qc1 = new QuizClass1();
+            string newGrade = qc1.Grades2('D');
+
             string grade1 = qc1.Grades('E');
             Console.WriteLine(grade1);
             string grade2 = qc1.Grades('V');

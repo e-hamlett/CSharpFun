@@ -1,5 +1,5 @@
 using System;
-using Quiz;
+
 
 namespace Quiz
 {
@@ -31,7 +31,7 @@ namespace Quiz
             HDTV hDTV = new HDTV("$700.00", "65 Inch");
             hDTV.TurnOn();
             hDTV.Mountability(true);
-            Console.WriteLine("There are " + ports + " ports available on this device.");
+            Console.WriteLine("There are " + hDTV.ports + " ports available on this device.");
 
             LKTV lKTV = new LKTV("$1250.00", "75\"");
             lKTV.Mountability(true);
@@ -42,6 +42,16 @@ namespace Quiz
         }
 
         public void Question3()
+        {
+            example ex = new example();
+            ex.ConversionFeet(12.2, example.FeetConvert.Centimeters);
+            ex.ConversionFeet(11.1, example.FeetConvert.Inches);
+            ex.ConversionFeet(10.6, example.FeetConvert.Meters);
+            ex.ConversionFeet(13.9, example.FeetConvert.Millimeters);
+            ex.ConversionFeet(14.7, example.FeetConvert.Yards);
+        }
+
+        public void Question4()
         {
 
         }
