@@ -29,7 +29,15 @@ namespace CSharpFun
             //IndexerSample();
             //PartialSample();
             //AnotherHouseExample();
-            CollectionSample();
+            //CollectionSample();
+            LabResult();
+        }
+
+        static void LabResult()
+        {
+            LabResults lr = new LabResults();
+            lr.Question1();
+            lr.Question2();
         }
 
         static void CollectionSample()
