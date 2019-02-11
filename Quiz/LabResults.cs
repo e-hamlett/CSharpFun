@@ -44,11 +44,11 @@ namespace Quiz
         public void Question3()
         {
             example ex = new example();
-            ex.ConversionFeet(12.2, example.FeetConvert.Centimeters);
-            ex.ConversionFeet(11.1, example.FeetConvert.Inches);
-            ex.ConversionFeet(10.6, example.FeetConvert.Meters);
-            ex.ConversionFeet(13.9, example.FeetConvert.Millimeters);
-            ex.ConversionFeet(14.7, example.FeetConvert.Yards);
+            ex.ConversionFeet(12.0, example.FeetConvert.Centimeters);
+            ex.ConversionFeet(1.1, example.FeetConvert.Inches);
+            ex.ConversionFeet(13.5, example.FeetConvert.Meters);
+            ex.ConversionFeet(16.3, example.FeetConvert.Millimeters);
+            ex.ConversionFeet(15.4, example.FeetConvert.Yards);
         }
 
         public void Question4()
