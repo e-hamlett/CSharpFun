@@ -2,7 +2,7 @@ using System;
 
 namespace Quiz
 {
-    public class example
+    public class FeetConversion
     {
         public enum FeetConvert { Centimeters, Inches, Meters, Millimeters, Yards }
 

@@ -43,17 +43,19 @@ namespace Quiz
 
         public void Question3()
         {
-            example ex = new example();
-            ex.ConversionFeet(12.0, example.FeetConvert.Centimeters);
-            ex.ConversionFeet(1.1, example.FeetConvert.Inches);
-            ex.ConversionFeet(13.5, example.FeetConvert.Meters);
-            ex.ConversionFeet(16.3, example.FeetConvert.Millimeters);
-            ex.ConversionFeet(15.4, example.FeetConvert.Yards);
+            FeetConversion fc = new FeetConversion();
+            fc.ConversionFeet(12.0, FeetConversion.FeetConvert.Centimeters);
+            fc.ConversionFeet(1.1, FeetConversion.FeetConvert.Inches);
+            fc.ConversionFeet(13.5, FeetConversion.FeetConvert.Meters);
+            fc.ConversionFeet(16.3, FeetConversion.FeetConvert.Millimeters);
+            fc.ConversionFeet(15.4, FeetConversion.FeetConvert.Yards);
         }
 
         public void Question4()
         {
-
+            LeapYear lyr = new LeapYear();
+            lyr.readdata();
+            lyr.leap();
         }
 
 

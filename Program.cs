@@ -36,9 +36,11 @@ namespace CSharpFun
         static void LabResult()
         {
             LabResults lr = new LabResults();
-            lr.Question1();
-            lr.Question2();
-            lr.Question3();
+            //lr.Question1();
+            //lr.Question2();
+            //lr.Question3();
+            lr.Question4();
+
         }
 
         static void CollectionSample()
