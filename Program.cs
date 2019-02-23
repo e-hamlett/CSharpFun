@@ -39,8 +39,9 @@ namespace CSharpFun
             //lr.Question1();
             //lr.Question2();
             //lr.Question3();
-            lr.Question4();
-
+            //lr.Question4();
+            lr.Question5();
+            //lr.Question6();
         }
 
         static void CollectionSample()

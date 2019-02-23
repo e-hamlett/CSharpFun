@@ -1,4 +1,5 @@
 using System;
+using StructQ5;
 
 
 namespace Quiz
@@ -56,6 +57,27 @@ namespace Quiz
             LeapYear lyr = new LeapYear();
             lyr.readdata();
             lyr.leap();
+        }
+
+        public void Question5()
+        {
+            TV1 tV1 = new TV1();
+            tV1.price = "$7000.00";
+            tV1.size = "75 Inch";
+            tV1.ports = 5;
+            tV1.isMountable = true;
+
+            Console.WriteLine("The price of the HDTV is  {0} ", tV1.price);
+            Console.WriteLine("The size of the HDTV is " + tV1.size);
+            Console.WriteLine("The number of ports of the HDTV is " + tV1.ports);
+            Console.WriteLine("Is the TV Mountable " + tV1.isMountable);
+        }
+
+        public void Question6()
+        {
+            DogYears dogYears = new DogYears();
+            dogYears.ReadData();
+            dogYears.DoggyYears();
         }
 
 
