@@ -16,3 +16,12 @@ it looks like Console.WritLine("This is an {0}", "example value")
 the above line is saying that "{0}" is holding a place for the values written to the right so that they can be put there when the application is run.
 example 2 C.WL("This is an {0}", 0; 35; "happy", 'a', "this is an example")
 it can be a string number, bool, property, etc. that is the value replacing the placeholders.
+
+
+Dog Years Calculator explained
+I created a folder called DYCalc.
+Inside the folder I have placed 4 files titled small, medium, and large dog as well as dog year calculator
+the calculator takes each class and makes a new instance and implements its methods there.
+each class has if - chain statements to ensure proper calculations.
+i called the calculator inside the lab results class. in my quiz folder.
+then called the method from the program.cs file.
