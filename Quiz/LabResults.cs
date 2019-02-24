@@ -1,7 +1,6 @@
 using System;
 using StructQ5;
 
-
 namespace Quiz
 {
     public class LabResults
@@ -75,11 +74,17 @@ namespace Quiz
 
         public void Question6()
         {
-            DogYears dogYears = new DogYears();
+            SmallDog dogYears = new SmallDog();
             dogYears.ReadData();
             dogYears.DoggyYears();
         }
 
+        public void Question7()
+        {
+            DogYearCalculator dyc = new DogYearCalculator();
+            dyc.DogSize();
+            dyc.calcSelect();
+        }
 
     }
 }

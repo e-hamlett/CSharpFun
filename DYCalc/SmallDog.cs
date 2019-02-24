@@ -4,14 +4,14 @@ using System.Text;
 
 namespace Quiz
 {
-    class DogYears
+    class SmallDog
     {
         int dogAge;
         int humanAge;
 
         public void ReadData()
         {
-            Console.WriteLine("Do you want to know just how old your dog is? You can check that here!");
+            Console.WriteLine("Now that we know the size. We need one more thing.");
             Console.WriteLine("How old is your dog in Human Years?");
             dogAge = Convert.ToInt32(Console.ReadLine());
         }
