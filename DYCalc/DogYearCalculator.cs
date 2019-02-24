@@ -6,8 +6,6 @@ namespace Quiz
 {
     class DogYearCalculator
     {
-
-
         int dogWeight;
 
         SmallDog sd = new SmallDog();
@@ -28,26 +26,22 @@ namespace Quiz
             {
                 Console.WriteLine("You have a small dog.");
                 sd.ReadData();
-                sd.DoggyYears();
             }
             else if (dogWeight >= 21 && dogWeight <= 49)
             {
                 Console.WriteLine("You have a medium dog");
                 md.ReadData();
-                md.DoggyYears();
             }
             else if (dogWeight >= 50)
             {
                 Console.WriteLine("You have a Larger dog.");
                 ld.ReadData();
-                ld.DoggyYears();
             }
             else
             {
                 Console.WriteLine("Thanks for asking me to help!");
             }
         }
-
 
     }
 }

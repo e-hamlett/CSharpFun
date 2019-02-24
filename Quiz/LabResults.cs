@@ -76,7 +76,7 @@ namespace Quiz
         {
             SmallDog dogYears = new SmallDog();
             dogYears.ReadData();
-            dogYears.DoggyYears();
+
         }
 
         public void Question7()
