@@ -14,7 +14,7 @@ namespace Quiz
 
         public void DogSize()
         {
-            Console.WriteLine("Do you want to find out how old your dog is in human years? If so, press Y.");
+            Console.WriteLine("Do you want to find out how old your dog is in human years? If so; press Y and then Enter Key.");
             Console.ReadLine();
             Console.WriteLine("Please enter your dogs weight.");
             dogWeight = Convert.ToInt32(Console.ReadLine());

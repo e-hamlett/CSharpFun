@@ -1,11 +1,14 @@
 ﻿using System;
 using Lessons;
 using Quiz;
+using Advanced;
 
 namespace CSharpFun
 {
     class Program
     {
+        public delegate void TryOn(string type);
+
         static void Main(string[] args)
         {
             //Console.WriteLine("Hello C#!");
@@ -30,18 +33,54 @@ namespace CSharpFun
             //PartialSample();
             //AnotherHouseExample();
             //CollectionSample();
-            LabResult();
+            //LabResult();
+            //DelegateSample();
+            //MultiDelegateSample();
+            EventSample();
+        }
+
+        private static void EventSample()
+        {
+            Coats myCoat = new Coats();
+            string result = myCoat.MyResult;
+            Console.WriteLine(result);
+        }
+
+        private static void MultiDelegateSample()
+        {
+            Hats moreHats = new Hats(7);
+            TryOn someHat, niceHat, sadHat;
+
+            niceHat = moreHats.FindLuckyHat;
+            niceHat("Top");
+
+            sadHat = moreHats.FindUglyHat;
+            sadHat("Dunce");
+
+            someHat = sadHat + niceHat;
+            someHat("Cowboy");
+
+        }
+
+        static void DelegateSample()
+        {
+            Hats myHat = new Hats("Cowboy", 7);
+            TryOn theHat = myHat.TryOnHat;
+            theHat("I can not fit this size of " + myHat.HatType + "; It must be a size " +
+            myHat.HatSize);
+
+            Hats mySecondHat = new Hats();
         }
 
         static void LabResult()
         {
             LabResults lr = new LabResults();
-            //lr.Question1();
-            //lr.Question2();
-            //lr.Question3();
-            //lr.Question4();
-            //lr.Question5();
-            //lr.Question6();
+            lr.Question1();
+            lr.Question2();
+            lr.Question3();
+            lr.Question4();
+            lr.Question5();
+            // lr.Question6();
             lr.Question7();
         }
 

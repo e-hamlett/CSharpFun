@@ -67,9 +67,9 @@ namespace Quiz
             tV1.isMountable = true;
 
             Console.WriteLine("The price of the HDTV is  {0} ", tV1.price);
-            Console.WriteLine("The size of the HDTV is " + tV1.size);
-            Console.WriteLine("The number of ports of the HDTV is " + tV1.ports);
-            Console.WriteLine("Is the TV Mountable " + tV1.isMountable);
+            Console.WriteLine("The size of the HDTV is {0} ", tV1.size);
+            Console.WriteLine("The number of ports of the HDTV is {0} ", tV1.ports);
+            Console.WriteLine("Is the TV Mountable {0}", tV1.isMountable);
         }
 
         public void Question6()

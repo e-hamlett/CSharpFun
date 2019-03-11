@@ -39,47 +39,47 @@ namespace Quiz
                     Console.WriteLine("Your dog is " + humanAge);
                     break;
                 case 6:
-                    humanAge = ((dogAge + 9) + 9) + (4 * 4) + 2;
+                    humanAge = ((dogAge + 9) + 9) + (4 * 4) + 2 + 3;
                     Console.WriteLine("Your dog is " + humanAge);
                     break;
                 case 7:
-                    humanAge = ((dogAge + 8) + 9) + (4 * 5) + 3;
+                    humanAge = ((dogAge + 8) + 9) + (4 * 5) + 3 + 3;
                     Console.WriteLine("Your dog is " + humanAge);
                     break;
                 case 8:
-                    humanAge = ((dogAge + 7) + 9) + (4 * 6) + 3;
+                    humanAge = ((dogAge + 7) + 9) + (4 * 6) + 3 + 4;
                     Console.WriteLine("your dog is " + humanAge);
                     break;
                 case 9:
-                    humanAge = ((dogAge + 6) + 9) + (4 * 7) + 4;
+                    humanAge = ((dogAge + 6) + 9) + (4 * 7) + 4 + 5;
                     Console.WriteLine("your dog is " + humanAge);
                     break;
                 case 10:
-                    humanAge = ((dogAge + 5) + 9) + (4 * 8) + 4;
+                    humanAge = ((dogAge + 5) + 9) + (4 * 8) + 4 + 6;
                     Console.WriteLine("Your dog is " + humanAge);
                     break;
                 case 11:
-                    humanAge = ((dogAge + 4) + 9) + (4 * 9) + 5;
+                    humanAge = ((dogAge + 4) + 9) + (4 * 9) + 5 + 7;
                     Console.WriteLine("your dog is " + humanAge);
                     break;
                 case 12:
-                    humanAge = ((dogAge + 3) + 9) + (4 * 10) + 5;
+                    humanAge = ((dogAge + 3) + 9) + (4 * 10) + 5 + 8;
                     Console.WriteLine("your dog is " + humanAge);
                     break;
                 case 13:
-                    humanAge = ((dogAge + 2) + 9) + (4 * 11) + 6;
+                    humanAge = ((dogAge + 2) + 9) + (4 * 11) + 6 + 8;
                     Console.WriteLine("your dog is " + humanAge);
                     break;
                 case 14:
-                    humanAge = ((dogAge + 1) + 9) + (4 * 12) + 6;
+                    humanAge = ((dogAge + 1) + 9) + (4 * 12) + 6 + 10;
                     Console.WriteLine("your dog is " + humanAge);
                     break;
                 case 15:
-                    humanAge = ((dogAge + 9) + (4 * 13) + 7);
+                    humanAge = ((dogAge + 9) + (4 * 13) + 7) + 12;
                     Console.WriteLine("your dog is " + humanAge);
                     break;
                 case 16:
-                    humanAge = ((dogAge - 1) + (4 * 14) + 7);
+                    humanAge = ((dogAge - 1) + (4 * 14) + 9) + 40;
                     Console.WriteLine("your dog is " + humanAge);
                     break;
 
