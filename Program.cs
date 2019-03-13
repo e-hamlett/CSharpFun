@@ -36,8 +36,23 @@ namespace CSharpFun
             //LabResult();
             //DelegateSample();
             //MultiDelegateSample();
-            EventSample();
+            //EventSample();
+            LambdaSample();
         }
+
+        private static void LambdaSample()
+        {
+            LambdaExamples myLAmbda = new LambdaExamples();
+
+            Console.WriteLine(myLAmbda.MyLambdaOne(5));
+            Console.WriteLine(myLAmbda.MyLambdaOne(6));
+            Console.WriteLine(myLAmbda.MyLambdaOne(7));
+            Console.WriteLine(myLAmbda.MyLambdaOne(8));
+            Console.WriteLine(myLAmbda.MyLambdaOne(9));
+            Console.WriteLine(myLAmbda.MyLambdaOne(10));
+
+        }
+
 
         private static void EventSample()
         {
